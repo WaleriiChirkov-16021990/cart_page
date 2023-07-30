@@ -1419,6 +1419,10 @@ summary::-webkit-details-marker {
   font-style: normal;
   font-weight: 300;
   line-height: normal;
+  position: relative;
+}
+.proceed_to_checkout:hover .color_mask {
+  opacity: 1;
 }
 .proceed_to_checkout:hover {
   color: #575757;
@@ -1426,6 +1430,17 @@ summary::-webkit-details-marker {
 .proceed_to_checkout:active {
   background-color: green;
   color: #E1E1E1;
+}
+
+.color_mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 25, 255, 0.4);
+  opacity: 0;
+  transition: opacity 0.4s linear;
 }
 
 .input_info_user {
@@ -1495,7 +1510,7 @@ summary::-webkit-details-marker {
 
 .ref_logo {
   transition: 3s;
-  filter: grayscale(90%);
+  filter: grayscale(86%);
 }
 
 .ref_logo:hover path {

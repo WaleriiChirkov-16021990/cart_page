@@ -1673,6 +1673,11 @@ line-height: normal;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
+  position: relative;
+
+  &:hover .color_mask {
+    opacity: 1;
+  }
 
   &:hover{
     color: #575757;
@@ -1682,6 +1687,17 @@ line-height: normal;
     background-color: green;
     color: #E1E1E1;
   }
+}
+
+.color_mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 25, 255, 0.4);
+  opacity: 0;
+  transition: opacity 0.4s linear;
 }
 
 .input_info_user {
@@ -1758,14 +1774,13 @@ line-height: normal;
   -o-transition: 3s;
   transition: 3s;
   -webkit-filter: grayscale(100%);
-  filter: grayscale(90%);
+  filter: grayscale(86%);
 }
 
 
 .ref_logo:hover path{
   fill:#EF5B70
 }
-
 
 
 /* =================================================================
